@@ -1,3 +1,49 @@
 page-home {
+    .backgroud-home {
+        background: #1a0a3a;
+        color: white;
+    }
 
+    .wave {
+        position: absolute;
+        background: #6285c6;
+        width: 900px;
+        height: 900px;
+        border-radius: 42%;
+        transform-origin: 50% 48%;
+        animation: drift 3000ms infinite linear;
+        opacity: 0.3;
+        bottom: -140%;
+        left:-70%;
+    }
+    
+    .wave.wave1 {
+        animation: drift 6000ms infinite linear;
+    }
+    
+    .wave.wave2 {
+        animation: drift 9000ms infinite linear;
+    }
+    
+    .wave.wave3 {
+        animation: drift 12000ms infinite linear;
+    }
+    
+    @keyframes drift{
+        from {transform: rotate(0deg);}
+        from {transform: rotate(360deg);}
+    }
+    
+    .menu-home-active {
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        background: #ff3e62;
+    }
 }
+
+
+
+
+
+
