@@ -5,6 +5,13 @@
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
 
+/*@font-face {
+  font-family: 'Open Sans';
+  font-style: extra-blold;
+  font-weight: 900;
+  src: url('../assets/fonts/Prompt-Black.ttf');
+}*/
+
 
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
@@ -86,3 +93,5 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+

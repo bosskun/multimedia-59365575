@@ -2,44 +2,104 @@ page-home {
     .backgroud-home {
         background: #1a0a3a;
         color: white;
+        position: relative;
     }
 
     .wave {
         position: absolute;
-        background: #6285c6;
-        width: 900px;
-        height: 900px;
-        border-radius: 42%;
+        background: radial-gradient(circle at 100%, #6285c6, #6285c6  50%, #1a0a3a 100%);
+        width: 100vh;
+        height: 100vh;
+        border-radius: 41%;
         transform-origin: 50% 48%;
-        animation: drift 3000ms infinite linear;
+        animation: drift 5000ms infinite linear;
         opacity: 0.3;
-        bottom: -140%;
-        left:-70%;
+        bottom: -104%;
+        left: -40%;
+        box-shadow: 10px 10px 5px #6285c6;
     }
+
     
     .wave.wave1 {
-        animation: drift 6000ms infinite linear;
+        background: radial-gradient(circle at 100%, #6285c6, #6285c6  50%, #1a0a3a 100%);
+        animation: drift 5000ms infinite linear;
+        box-shadow: 0 50px 50px rgba(98, 133, 198, 0.439);
     }
     
     .wave.wave2 {
-        animation: drift 9000ms infinite linear;
+        background: radial-gradient(circle at 100%, #6285c6, #6285c6  50%, #1a0a3a 100%);
+        animation: drift 8000ms infinite linear;
+        box-shadow: 0 50px 50px rgba(98, 133, 198, 0.439);
     }
     
     .wave.wave3 {
-        animation: drift 12000ms infinite linear;
+        background: radial-gradient(circle at 100%, #6285c6, #6285c6  50%, #1a0a3a 100%);
+        animation: drift 11000ms infinite linear;
+        box-shadow: 0 50px 50px rgba(98, 133, 198, 0.439);
     }
     
-    @keyframes drift{
+    @keyframes drift  {
         from {transform: rotate(0deg);}
         from {transform: rotate(360deg);}
     }
     
     .menu-home-active {
-        width: 200px;
-        height: 200px;
+        height: 140px;
         border-radius: 5px;
         background: #ff3e62;
+        padding-top: 13px;
     }
+
+    .menu-home-close {
+        padding-top: 10px;
+        height: 140px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #998ead;
+    }
+
+    ion-icon {
+        font-size: 60px; 
+        &[class*="custom-"] {
+            mask-size: contain;
+            mask-position: 50% 50%;
+            mask-repeat: no-repeat;
+            background: currentColor;
+            width: 1em;
+            height: 1em;
+          }
+        
+          &[class*="custom-wind"] {
+            mask-image: url(../assets/imgs/wind.svg);
+            font-size: 55px;
+          }//Preferred size here
+    }
+
+    * ::-webkit-scrollbar {
+    display: none;
+    }
+
+    .control {
+        padding-top: 30%;
+        padding-left: 5%;
+    }
+
+    .scroll-content {
+        overflow: hidden;
+      }
+    
+    .info-temp {
+        text-align: center;
+        padding-top: 12%;
+    }
+
+    
+    
+     /* ion-list {
+        overflow-y: auto;
+        max-height: 72vh;
+      }*/
 }
 
 
