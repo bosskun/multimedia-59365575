@@ -1,3 +1,55 @@
 page-about {
-
+    .backgroud-home {
+        background: #1a0a3a;
+        color: white;
+        position: relative;
+    }
+    ion-icon {
+        font-size: 25px;
+        &[class*="custom-"] {
+            mask-size: contain;
+            mask-position: 50% 50%;
+            mask-repeat: no-repeat;
+            background: currentColor;
+            width: 1em;
+            height: 1em;
+        }
+        &[class*="custom-wind"] {
+            mask-image: url(../assets/imgs/wind.svg);
+            font-size: 55px;
+        } //Preferred size here
+    }
+    .icon-active {
+        height: 40px;
+        width: 40px;
+        background: #ff3e62;
+        padding-left: 9px;
+        padding-top: 7px;
+        border-radius: 50%;
+        position: relative;
+    }
+    * ::-webkit-scrollbar {
+        display: none;
+    }
+    .control {
+        padding-top: 30%;
+        padding-left: 3%;
+    }
+    .scroll-content {
+        overflow: hidden;
+    }
+    .info-temp {
+        text-align: center;
+        padding-top: 12%;
+    }
+    /* ion-list {
+        overflow-y: auto;
+        max-height: 72vh;
+      }*/
+    .padding-text-col {
+        padding-top: 5px;
+        font-size: 10px;
+        text-align: center;
+        padding-right: 32%;
+    }
 }

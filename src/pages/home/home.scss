@@ -4,9 +4,10 @@ page-home {
         color: white;
         position: relative;
     }
+
     .wave {
         position: absolute;
-        background: radial-gradient(circle at 100%, #6285c6, #6285c6 50%, #1a0a3a 100%);
+        background: radial-gradient(circle at 100%, #6285c6, #6285c6  50%, #1a0a3a 100%);
         width: 100vh;
         height: 100vh;
         border-radius: 41%;
@@ -17,35 +18,38 @@ page-home {
         left: -40%;
         box-shadow: 10px 10px 5px #6285c6;
     }
+
+    
     .wave.wave1 {
-        background: radial-gradient(circle at 100%, #6285c6, #6285c6 50%, #1a0a3a 100%);
+        background: radial-gradient(circle at 100%, #6285c6, #6285c6  50%, #1a0a3a 100%);
         animation: drift 5000ms infinite linear;
         box-shadow: 0 50px 50px rgba(98, 133, 198, 0.439);
     }
+    
     .wave.wave2 {
-        background: radial-gradient(circle at 100%, #6285c6, #6285c6 50%, #1a0a3a 100%);
+        background: radial-gradient(circle at 100%, #6285c6, #6285c6  50%, #1a0a3a 100%);
         animation: drift 8000ms infinite linear;
         box-shadow: 0 50px 50px rgba(98, 133, 198, 0.439);
     }
+    
     .wave.wave3 {
-        background: radial-gradient(circle at 100%, #6285c6, #6285c6 50%, #1a0a3a 100%);
+        background: radial-gradient(circle at 100%, #6285c6, #6285c6  50%, #1a0a3a 100%);
         animation: drift 11000ms infinite linear;
         box-shadow: 0 50px 50px rgba(98, 133, 198, 0.439);
     }
-    @keyframes drift {
-        from {
-            transform: rotate(0deg);
-        }
-        from {
-            transform: rotate(360deg);
-        }
+    
+    @keyframes drift  {
+        from {transform: rotate(0deg);}
+        from {transform: rotate(360deg);}
     }
+    
     .menu-home-active {
         height: 140px;
         border-radius: 5px;
         background: #ff3e62;
         padding-top: 13px;
     }
+
     .menu-home-close {
         padding-top: 10px;
         height: 140px;
@@ -54,8 +58,9 @@ page-home {
         border-width: 2px;
         border-color: #998ead;
     }
+
     ion-icon {
-        font-size: 60px;
+        font-size: 60px; 
         &[class*="custom-"] {
             mask-size: contain;
             mask-position: 50% 50%;
@@ -63,28 +68,42 @@ page-home {
             background: currentColor;
             width: 1em;
             height: 1em;
-        }
-        &[class*="custom-wind"] {
+          }
+        
+          &[class*="custom-wind"] {
             mask-image: url(../assets/imgs/wind.svg);
             font-size: 55px;
-        } //Preferred size here
+          }//Preferred size here
     }
+
     * ::-webkit-scrollbar {
-        display: none;
+    display: none;
     }
+
     .control {
         padding-top: 30%;
         padding-left: 5%;
     }
+
     .scroll-content {
         overflow: hidden;
-    }
+      }
+    
     .info-temp {
         text-align: center;
         padding-top: 12%;
     }
-    /* ion-list {
+
+    
+    
+     /* ion-list {
         overflow-y: auto;
         max-height: 72vh;
       }*/
 }
+
+
+
+
+
+
