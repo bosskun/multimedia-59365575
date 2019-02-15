@@ -16,8 +16,9 @@ page-about {
         }
         &[class*="custom-wind"] {
             mask-image: url(../assets/imgs/wind.svg);
-            font-size: 55px;
-        } //Preferred size here
+            font-size: 25px;
+        }
+
     }
     .icon-active {
         height: 40px;
@@ -26,6 +27,47 @@ page-about {
         padding-left: 9px;
         padding-top: 7px;
         border-radius: 50%;
+        position: relative;
+    }
+
+    .icon-active-img {
+        height: 40px;
+        width: 40px;
+        background: #ff3e62;
+        padding-left: 5px;
+        padding-top: 5px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+
+    .icon-deactive {
+        height: 40px;
+        width: 40px;
+        padding-left: 10px;
+        padding-top: 7px;
+        position: relative;
+    }
+
+    .icon-deactive-img {
+        height: 40px;
+        width: 40px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    .icon-deactive-dry {
+        height: 40px;
+        width: 40px;
+        padding-top: 5px;
+        padding-left: 4px;
+    }
+
+    .icon-deactive-wind {
+        height: 40px;
+        width: 40px;
+        padding-left: 6px;
+        padding-top: 7px;
         position: relative;
     }
     * ::-webkit-scrollbar {
@@ -40,7 +82,7 @@ page-about {
     }
     .info-temp {
         text-align: center;
-        padding-top: 12%;
+        padding-top: 9%;
     }
     /* ion-list {
         overflow-y: auto;
@@ -48,8 +90,8 @@ page-about {
       }*/
     .padding-text-col {
         padding-top: 5px;
-        font-size: 10px;
+        font-size: 12.5px;
         text-align: center;
-        padding-right: 32%;
+        padding-right: 30%;
     }
 }
