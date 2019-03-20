@@ -1,12 +1,12 @@
 export const environment = {
 
     firebaseConfig: {
-        apiKey: "AIzaSyDmKru41kAnX9gF_EOK4PQaM0GSvkrV7bA",
-        authDomain: "multimedia-79687.firebaseapp.com",
-        databaseURL: "https://multimedia-79687.firebaseio.com",
-        projectId: "multimedia-79687",
-        storageBucket: "multimedia-79687.appspot.com",
-        messagingSenderId: "589818907579"
+        apiKey: "AIzaSyCdh0046woCUfEvQbBhU2VVH_2gVG_FapI",
+        authDomain: "multimedia-cloud.firebaseapp.com",
+        databaseURL: "https://multimedia-cloud.firebaseio.com",
+        projectId: "multimedia-cloud",
+        storageBucket: "multimedia-cloud.appspot.com",
+        messagingSenderId: "220103378329"
     },
     googleCloudVisionAPIKey: "AIzaSyBYLTJ1EiedBLcmX8MfH0CD_iY6tBgDYlM"
 };

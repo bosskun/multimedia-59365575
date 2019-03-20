@@ -1,3 +1,4 @@
+import { MenuPage } from './../menu/menu';
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 
@@ -13,6 +14,7 @@ export class TabsPage {
   tab1Root = HomePage;
   tab2Root = AboutPage;
   tab3Root = ContactPage;
+  tab4Root = MenuPage;
 
   constructor() {
 

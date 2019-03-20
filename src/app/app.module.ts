@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { MenuPage } from './../pages/menu/menu';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { HttpModule } from '@angular/http';
@@ -25,6 +26,7 @@ import { environment } from '../environment';
     AboutPage,
     ContactPage,
     HomePage,
+    MenuPage,
     TabsPage
   ],
   imports: [
@@ -42,6 +44,7 @@ import { environment } from '../environment';
     AboutPage,
     ContactPage,
     HomePage,
+    MenuPage,
     TabsPage
   ],
   providers: [

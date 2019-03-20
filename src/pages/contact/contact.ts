@@ -3,6 +3,7 @@ import { NavController, AlertController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { GoogleCloudVisionServiceProvider } from '../../providers/google-cloud-vision-service/google-cloud-vision-service';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { e } from '@angular/core/src/render3';
 
 @Component({
   selector: 'page-contact',
@@ -31,7 +32,7 @@ export class ContactPage {
     this.camera.getPicture(options).then((imageData) => {
       this.vision.getLabels(imageData)
         .subscribe((result) => {
-          this.saveResults(imageData, result.json().responses);
+            this.saveResults(imageData, result.json().responses);
         }, err => {
           this.showAlert(err);
         });
