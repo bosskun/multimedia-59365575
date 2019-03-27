@@ -1,3 +1,17 @@
 page-menu {
+  .body-color {
+    animation: color-change-2x 2s linear infinite alternate both;
+  }
+
+  @keyframes color-change-2x {
+    0% {
+      background: #0a2729;
+    }
+    100% {
+      background: #1a0a3a;
+    }
+  }
+
+  
 
 }

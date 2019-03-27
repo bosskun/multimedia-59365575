@@ -1,3 +1,4 @@
+import { TestPage } from './../pages/test/test';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -7,6 +8,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { MenuPage } from './../pages/menu/menu';
+import { ContentPage } from './../pages/content/content';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { HttpModule } from '@angular/http';
@@ -27,6 +29,8 @@ import { environment } from '../environment';
     ContactPage,
     HomePage,
     MenuPage,
+    ContentPage,
+    TestPage,
     TabsPage
   ],
   imports: [
@@ -45,6 +49,8 @@ import { environment } from '../environment';
     ContactPage,
     HomePage,
     MenuPage,
+    ContentPage,
+    TestPage,
     TabsPage
   ],
   providers: [
