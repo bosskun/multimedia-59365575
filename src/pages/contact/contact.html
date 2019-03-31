@@ -1,16 +1,35 @@
 <ion-content padding>
-  <ion-card *ngFor="let item of items | async">
+  <ion-slides slidesPerView="1.1" spaceBetween="10%">
+    <ion-slide *ngFor="let item of items | async">
+  <div class="slide-in-bck-center card-background-page manage" (click)="clickToAbout(item);">
     <img [src]="'data:image/png;base64,' + item.imageData" />
-    <ion-card-content>
+    <!-- <ion-card-content>
       <ion-list no-lines>
-        <ion-list-header>Labels</ion-list-header>
-        <ion-item *ngFor="let label of item.results[0].textAnnotations">{{label.description}}</ion-item>
+        <ion-list-header>Result</ion-list-header> 
+        <ion-item *ngFor="let label of item.results[0].textAnnotations">> {{label.description}}</ion-item> 
       </ion-list>
-    </ion-card-content>
-  </ion-card>
+    </ion-card-content> -->
+  </div>
+</ion-slide>
+</ion-slides>
   <ion-fab bottom right>
     <button ion-fab (click)="takePhoto()">
       <ion-icon name="camera"></ion-icon>
     </button>
   </ion-fab>
+
+  <!-- <figure class="system">
+      <span class="planet"></span>
+      <span class="moon"></span>
+      
+      <span class="star star--blue star--1"></span>
+      <span class="star star--2"></span>
+      <span class="star star--red star--3"></span>
+      <span class="star star--round star--4"></span>
+      
+      
+      <span class="star star--red star--5"></span>
+      <span class="star star--round star--6"></span>
+      <span class="star star--blue star--7"></span>
+  </figure> -->
 </ion-content>

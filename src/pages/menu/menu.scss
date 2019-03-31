@@ -1,17 +1,242 @@
 page-menu {
-  .body-color {
-    animation: color-change-2x 2s linear infinite alternate both;
+  .backgroud-home {
+    background: #fff;
+    color: white;
+    position: relative;
+  }
+  
+  .ion-list-bg {
+    background: none;
+    color: white;
   }
 
-  @keyframes color-change-2x {
-    0% {
-      background: #0a2729;
-    }
-    100% {
-      background: #1a0a3a;
-    }
+  .control-padding{
+    padding-top: 20%;
+    font-size: 70px;
   }
+
+  .card-ion{
+    border-radius: 0%;
+    overflow: hidden;
+  }
+
+  .control {
+    padding: 4em 2em;
+
+  }
+
+  .slide-control {
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+
+  .title{
+    width: 100%;
+    height:50%
+  }
+
+
+
+  .card-control{
+    padding-top: 20%;
+  }
+
+  * ::-webkit-scrollbar {
+    display: none;
+    }
 
   
+  .scroll-content {
+      overflow: hidden;
+    }
+  
 
+    .slide-top {
+      -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @-webkit-keyframes slide-top {
+      0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+      100% {
+        -webkit-transform: translateY(-100px);
+                transform: translateY(-100px);
+      }
+    }
+    @keyframes slide-top {
+      0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+      100% {
+        -webkit-transform: translateY(-100px);
+                transform: translateY(-100px);
+      }
+    }
+
+    .paddingAll {
+      padding-top:25%;
+    }
+
+    .card-holder {
+     // margin: 2em 0;
+    }
+    
+    .card {
+      font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+      font-size: 3em;
+      font-weight: 800;
+      //height: 4em;
+      width: 21em;
+      padding: 0.1em 1em;
+      border-radius: 0.10em;
+      display: table-cell;
+      vertical-align: middle;
+      letter-spacing: -2px;
+      //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .card .subtle {
+      color: #000;
+      font-size: 0.7em;
+      font-weight: 500;
+
+  }
+    
+    .card i {
+      font-size: 3em;
+    }
+    
+    .bg-gold {
+      background: -webkit-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+      background: -o-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+      background: -moz-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+      background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    }
+    
+    .bg-news {
+      background: -webkit-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+      background: -o-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+      background: -moz-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+      background: linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+    }
+    
+    .bg-germany {
+        color: #fff;
+        background: -webkit-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -webkit-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+        background: -o-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -o-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+        background: -moz-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -moz-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+        background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+    }
+    
+    .bg-aurora {
+        color: #fff;
+        background: -webkit-linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia21421-cr.jpg');
+        background: -o-linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia21421-cr.jpg');
+        background: -moz-linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia21421-cr.jpg');
+        background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia21421-cr.jpg');
+      background-size: cover;
+      background-position: 50% 21%;
+      text-align: right;
+    }
+    
+    .bg-germany {
+        color: #fff;
+        background: -webkit-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -webkit-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+        background: -o-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -o-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+        background: -moz-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -moz-linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+        background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+    }
+    
+    .bg-purple {
+        color: #fff;
+        background: -webkit-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+        background: -o-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+        background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+        background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    }
+    
+    .bg-spring {
+        background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+        background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+        background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+        background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+    }
+
+    .tracking-in-contract-bck {
+      -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+              animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+    @-webkit-keyframes tracking-in-contract-bck {
+      0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+                transform: translateZ(400px);
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+      }
+    }
+    @keyframes tracking-in-contract-bck {
+      0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+                transform: translateZ(400px);
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+      }
+    }
+    
+    .text-shadow-pop-br {
+      -webkit-animation: text-shadow-pop-br 0.6s both;
+      animation: text-shadow-pop-br 0.6s both;
+  }
+
+  @-webkit-keyframes text-shadow-pop-br {
+      0% {
+          text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+          -webkit-transform: translateX(0) translateY(0);
+          transform: translateX(0) translateY(0);
+      }
+
+      100% {
+          text-shadow: 1px 1px #555555, 2px 2px #555555, 3px 3px #555555, 4px 4px #555555, 5px 5px #555555, 6px 6px #555555, 7px 7px #555555, 8px 8px #555555;
+          -webkit-transform: translateX(-8px) translateY(-8px);
+          transform: translateX(-8px) translateY(-8px);
+      }
+  }
+
+  @keyframes text-shadow-pop-br {
+      0% {
+          text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+          -webkit-transform: translateX(0) translateY(0);
+          transform: translateX(0) translateY(0);
+      }
+
+      100% {
+          text-shadow: 1px 1px #555555, 2px 2px #555555, 3px 3px #555555, 4px 4px #555555, 5px 5px #555555, 6px 6px #555555, 7px 7px #555555, 8px 8px #555555;
+          -webkit-transform: translateX(-8px) translateY(-8px);
+          transform: translateX(-8px) translateY(-8px);
+      }
+  }
+    
+  
+    
 }

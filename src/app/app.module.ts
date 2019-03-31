@@ -21,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { GoogleCloudVisionServiceProvider } from '../providers/google-cloud-vision-service/google-cloud-vision-service';
 import { Camera } from '@ionic-native/camera';
 import { environment } from '../environment';
+import { GetElectionProvider } from '../providers/get-election/get-election';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { environment } from '../environment';
     Camera,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    GoogleCloudVisionServiceProvider
+    GoogleCloudVisionServiceProvider,
+    GetElectionProvider
   ]
 })
 export class AppModule { }

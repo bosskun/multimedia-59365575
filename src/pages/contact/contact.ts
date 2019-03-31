@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
+import { NavController, AlertController, LoadingController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { GoogleCloudVisionServiceProvider } from '../../providers/google-cloud-vision-service/google-cloud-vision-service';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { e } from '@angular/core/src/render3';
+import { LoadedModule } from 'ionic-angular/umd/util/module-loader';
 
 @Component({
   selector: 'page-contact',
@@ -15,9 +16,13 @@ export class ContactPage {
     private camera: Camera,
     private vision: GoogleCloudVisionServiceProvider,
     private db: AngularFireDatabase,
+    private loading: LoadingController,
     private alert: AlertController) {
     this.items = db.list('items');
+    
   }
+  
+  
 
   takePhoto() {
     const options: CameraOptions = {
@@ -28,7 +33,7 @@ export class ContactPage {
       encodingType: this.camera.EncodingType.PNG,
       mediaType: this.camera.MediaType.PICTURE
     }
-
+    
     this.camera.getPicture(options).then((imageData) => {
       this.vision.getLabels(imageData)
         .subscribe((result) => {
@@ -53,6 +58,10 @@ export class ContactPage {
       buttons: ['OK']
     });
     alert.present();
+  }
+
+  clickToAbout(items){
+    console.log(items);
   }
 
 

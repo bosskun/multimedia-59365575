@@ -1,4 +1,3 @@
-
 import { MenuPage } from './../menu/menu';
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';

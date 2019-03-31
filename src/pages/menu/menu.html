@@ -1,12 +1,39 @@
-<ion-content class="body-color" padding>
-    <div class="color-change-2">
-        <div>
-          <h1>Select Climate <br>
-            Settings</h1>
-          <p style="color:#998ead;">Favorite Presets</p>
-        </div>
-        </div>
+<ion-content class="backgroud-home" ng-app="ionicApp">
+  <div class="title bg-news">
+    <div class="card subtitle tracking-in-contract-bck">
+        <p class="control-padding text-shadow-pop-br">Menus</p>
+    </div>
+  </div>
+  <div class="paddingAll">
+  <div>
+    <div class="slide-top control">
+      
+        <ion-list no-lines style="border: none;">
+          <button ion-item (click)="homePage()">
+            <ion-icon name="home" item-start></ion-icon>
+            Home
+          </button>
+      
+          <button ion-item (click)="contentPage()">
+            <ion-icon name="md-book" item-start></ion-icon>
+            Content
+          </button>
+      
+          <button ion-item (click)="aboutPages()">
+            <ion-icon name="information-circle" item-start></ion-icon>
+            About
+          </button>
+      
+          <button ion-item (click)="visionPage()">
+            <ion-icon name="contacts" item-start></ion-icon>
+            Google Cloud Vision
+          </button>
+      
+        </ion-list>
+      </div>
+    </div>
+    </div>
+
 </ion-content>
 
 
-  
