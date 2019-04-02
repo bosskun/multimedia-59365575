@@ -1,7 +1,7 @@
 <ion-content padding>
   <ion-slides slidesPerView="1.1" spaceBetween="10%">
     <ion-slide *ngFor="let item of items | async">
-  <div class="slide-in-bck-center card-background-page manage" (click)="clickToAbout(item);">
+  <div class="slide-in-bck-center card-background-page manage" (click)="clickToAbout(item);" ion-long-press [interval]="400" (onPressStart)="presentActionSheet(item)">
     <img [src]="'data:image/png;base64,' + item.imageData" />
     <!-- <ion-card-content>
       <ion-list no-lines>

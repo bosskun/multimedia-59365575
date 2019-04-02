@@ -1,3 +1,4 @@
+import { LongPressModule } from 'ionic-long-press';
 import { TestPage } from './../pages/test/test';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,6 +23,7 @@ import { GoogleCloudVisionServiceProvider } from '../providers/google-cloud-visi
 import { Camera } from '@ionic-native/camera';
 import { environment } from '../environment';
 import { GetElectionProvider } from '../providers/get-election/get-election';
+import { InfoModalPage } from '../pages/info-modal/info-modal';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { GetElectionProvider } from '../providers/get-election/get-election';
     HomePage,
     MenuPage,
     ContentPage,
+    InfoModalPage,
     TestPage,
     TabsPage
   ],
@@ -41,7 +44,8 @@ import { GetElectionProvider } from '../providers/get-election/get-election';
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    LongPressModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -52,6 +56,7 @@ import { GetElectionProvider } from '../providers/get-election/get-election';
     MenuPage,
     ContentPage,
     TestPage,
+    InfoModalPage,
     TabsPage
   ],
   providers: [
